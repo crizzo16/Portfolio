@@ -13,13 +13,7 @@ app.use(express.static("public"));
 // Routes
 require("./routes/htmlRoutes.js")(app);
 
-var syncOptions = { force: false };
 
-// If running a test, set syncOptions.force to true
-// clearing the `testdb`
-if (process.env.NODE_ENV === "test") {
-  syncOptions.force = true;
-}
 
 // Starting the server, syncing our models ------------------------------------/
 app.listen(PORT, function () {
@@ -30,4 +24,4 @@ app.listen(PORT, function () {
   );
 });
 
-//module.exports = app;
+module.exports = app;
