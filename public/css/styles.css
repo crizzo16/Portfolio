@@ -59,6 +59,22 @@ main {
     height: 30vh;
 }
 
+.ns-xs {
+    height: 20vh;
+}
+
+.ns-sm {
+    height: 40vh;
+}
+
+.ns-md {
+    height: 60vh;
+}
+
+.ns-lg {
+    height: 80vh;
+}
+
 .brand-icon {
     margin-left: 10px;
     margin-right: 10px;
