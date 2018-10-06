@@ -1,7 +1,6 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 
-
 var app = express();
 var PORT = process.env.PORT || 4955;
 
@@ -12,7 +11,6 @@ app.use(express.static("public"));
 
 // Routes
 require("./routes/htmlRoutes.js")(app);
-
 
 
 // Starting the server, syncing our models ------------------------------------/
